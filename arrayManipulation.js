@@ -10,6 +10,18 @@ console.log('Task 1 Output: ', processArray(numbers));
 
 
 
+// Task 2:
+
+// Function to format array strings
+function formatArrayStrings(strings, processedNumbers) {
+    return strings.map((str, index) => {
+        return processedNumbers[index] % 2 === 0 ? str.toUpperCase() : str.toLowerCase();
+    });
+}
+
+let strings = ["This", "is", "Victor", "Lucky", "Dawu"];
+let processedNumbers = processArray(numbers);
+console.log('Task 2 Output: ', formatArrayStrings(strings, processedNumbers)); 
 
 
 
